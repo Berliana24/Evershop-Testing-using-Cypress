@@ -1,0 +1,13 @@
+[
+    
+    {
+        "LoginCase" : "PASS",
+        "Email" : "berlis@gmail.com",
+        "Password" : "berliana"
+    },{
+        "LoginCase" : "FAIL",
+        "Email" : "berlisdeds@gmail.com",
+        "Password" : "berliasdawedna"
+    }
+
+]
