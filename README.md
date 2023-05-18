@@ -1,8 +1,10 @@
 # Evershop-Testing-using-Cypress
 
 Create Test case for Evershop Website using Cypress
+link: (https://demo.evershop.io/)
 
-
+## Running Test
+    npx cypress open    
 
 ## 1.	SignUp Feature
 
