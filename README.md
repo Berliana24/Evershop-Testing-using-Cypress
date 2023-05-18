@@ -6,10 +6,15 @@ Create Test case for Evershop Website using Cypress
 ## Running Test
     npx cypress open    
 
-## 1.	SignUp Feature
 
 
-### Case 1
+## Test Scenario
+
+
+### 1.	SignUp Feature
+
+
+#### Case 1
 
 Feature: Signup
   As a user
@@ -30,7 +35,7 @@ Successful Signup:
 - After clicking the Signup button, the user should be redirected to the Home page
 
 
-### Case 2
+#### Case 2
 
 Feature: Signup
   As a user
@@ -53,10 +58,10 @@ Feature: Signup
 
 
 
-## 2.	Login Feature
+### 2.	Login Feature
 
 
-### Case 1
+#### Case 1
 
 Story: 
   As a user, 
@@ -75,7 +80,7 @@ Acceptance criteria:
 - The user should see an error message if they enter an invalid email or password
 
 
-### Case 2
+#### Case 2
 
 Story: 
   As a user, 
@@ -96,10 +101,10 @@ Criteria for Failure: The test case would be considered a failure if any of the 
 
 
 
-## 3.	Shopping Feature Without Login
+### 3.	Shopping Feature Without Login
 
 
-### Case 1
+#### Case 1
 
   User Story: 
   As a customer, 
@@ -114,7 +119,7 @@ Criteria for Failure: The test case would be considered a failure if any of the 
     Then the customer should see a list of products with titles, descriptions, images, and prices
 
 
-### Case 2
+#### Case 2
 
     Scenario: Adding multiple items to the shopping cart
     Given the user has selected the desired items
@@ -123,7 +128,7 @@ Criteria for Failure: The test case would be considered a failure if any of the 
     And the system should allow the user to view the list of items in the shopping cart
 
 
-### Case 3
+#### Case 3
 
     Scenario: Updating the quantity of items in the shopping cart
     Given the user has added multiple items to the shopping cart
@@ -132,7 +137,7 @@ Criteria for Failure: The test case would be considered a failure if any of the 
     And the system should display the updated total price of the items in the shopping cart
 
 
-### Case 4
+#### Case 4
 
     Scenario: Removing items from the shopping cart
     Given the user has added multiple items to the shopping cart
@@ -141,7 +146,7 @@ Criteria for Failure: The test case would be considered a failure if any of the 
     And the system should display the updated total price of the items in the shopping cart
 
 
-### Case 5
+#### Case 5
 
     Scenario: Proceeding to checkout with items in the shopping cart
     Given the user has added multiple items to the shopping cart
@@ -159,10 +164,10 @@ Acceptance Criteria:
 
 
 
-## 4.	Shopping Feature With Login
+### 4.	Shopping Feature With Login
 
 
-### Case 1
+#### Case 1
 
     Scenario: Add multiple items to the shopping cart with a logged-in user
     Given I am a logged-in user
