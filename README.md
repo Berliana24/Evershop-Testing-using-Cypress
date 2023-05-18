@@ -2,7 +2,7 @@
 
 Create Test case for Evershop Website using Cypress
 
-![Evershop]([url_gambar](https://drive.google.com/file/d/1oEhDrcDVPLp3COAxOF30TZ5Qw6CelKet/view?usp=sharing))
+![Evershop](https://drive.google.com/file/d/1oEhDrcDVPLp3COAxOF30TZ5Qw6CelKet/view?usp=sharing)
 
 
 
