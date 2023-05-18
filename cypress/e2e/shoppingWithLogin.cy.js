@@ -28,7 +28,7 @@ describe('Shopping Feature With Login', () => {
         cy.xpath ("//a[normalize-space()='Continue Shopping']").click();
         cy.wait (2000);
 
-        // add produk 2
+        // // add produk 2
         cy.xpath ("//a[@class='nav-link hover:underline'][contains(.,'Women')]").click();
         cy.xpath("//div[@class='listing-tem'][contains(.,'Edge gameday shoes$963.00')]").scrollIntoView();
         cy.get ("img[alt='Edge gameday shoes']").click();
@@ -55,11 +55,11 @@ describe('Shopping Feature With Login', () => {
         cy.get ('.items-table.listing').should('be.visible');
 
         //update quantity
-        cy.xpath ("(//a[contains(@class,'name font-semibold hover:underline')])[1]").click();
+        cy.xpath ("//a[normalize-space()='Alphaedge 4d reflective shoes R']").click();
         cy.xpath ("//input[@placeholder='Qty']").clear().type(2);
         cy.xpath ("//a[normalize-space()='M']").click();
         cy.wait (1000);
-        cy.xpath ("//a[normalize-space()='Black']").click();;
+        cy.xpath ("//a[normalize-space()='Black']").click();
         cy.wait (1000);
         cy.xpath ("//button[@type='button'][contains(.,'ADD TO CART')]").click();
         cy.wait (2000);
@@ -98,13 +98,17 @@ describe('Shopping Feature With Login', () => {
 
         cy.xpath ("//button[@type='button'][contains(.,'Continue to payment')]").click();
 
+        
         cy.xpath ("//div[@class='checkout-payment checkout-step']//div//div[1]//div[1]//div[1]//div[1]//div[1]//a[1]//*[name()='svg']")
-        .click({ force: true });
+        .dblclick({ force: true });
 
         cy.xpath ("//button[@type='button'][contains(.,'Place Order')]").click();
 
+        cy.wait(3000);
+
         cy.xpath ("//div[@class='checkout-payment checkout-step']//div//div[1]//div[1]//div[1]//div[1]//div[1]//a[1]//*[name()='svg']")
         .click({ force: true });
+
 
         cy.writeFile('cypress/fixtures/checkout.json', JSON.stringify(checkout));
 
